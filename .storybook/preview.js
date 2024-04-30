@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../src/styles/global-styles'
-import { theme } from '../src/styles/theme'
+import { GlobalStyles } from '../src/styles/global-styles';
+import { theme } from '../src/styles/theme';
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -11,6 +11,19 @@ const preview = {
         date: /Date$/i,
       },
     },
+    backgrounds: {
+      default: 'light',
+      values: [
+        {
+          name: 'light',
+          value: theme.colors.white,
+        },
+        {
+          name: 'dark',
+          value: theme.colors.primaryColor,
+        },
+      ],
+    },
   },
   decorators: [
     (Story) => (
@@ -18,7 +31,7 @@ const preview = {
         <Story />
         <GlobalStyles />
       </ThemeProvider>
-    )
+    ),
   ],
 };
 
