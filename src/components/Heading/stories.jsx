@@ -16,4 +16,17 @@ export default {
   },
 };
 
-export const Template = (args) => <Heading {...args} />;
+export const Light = (args) => <Heading {...args}/>;
+export const Dark = (args) => <Heading {...args}/>;
+
+Light.parameters = {
+  backgrounds: {
+    default: 'light',
+  }
+};
+
+Dark.args = {
+  children: 'O texto está claro',
+  colorDark: false,
+};
+

@@ -1,19 +1,13 @@
-module.exports = {
-  arrowParens: 'always',
-  bracketSpacing: true,
-  htmlWhitespaceSensitivity: 'ignore',
-  insertPragma: false,
-  jsxSingleQuote: false,
-  printWidth: 80,
-  proseWrap: 'always',
-  quoteProps: 'as-needed',
-  requirePragma: false,
-  semi: true,
+const config = {
+  trailingComma: "all",
+  tabWidth: 4,
+  semi: false,
   singleQuote: true,
-  tabWidth: 2,
-  trailingComma: 'all',
-  useTabs: false,
-  vueIndentScriptAndStyle: false,
-  embeddedLanguageFormatting: 'off',
-};
+  bracketSpacing: true,
+  bracketSameLine: true,
+  jsxSingleQuote: true,
+  jsxBracketSameLine: true,
+}
+
+export default config;
 
