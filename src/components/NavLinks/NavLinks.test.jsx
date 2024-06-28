@@ -24,7 +24,7 @@ describe('<NavLinks />', () => {
       'flex-flow',
       'column wrap',
       {
-        media: theme.media.lteMedium,
+        media: theme.font.media.lteMedium,
       },
     );
   });
